@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+    <title>たべて味ライ</title>
+    <!-- ファビコン -->
+    <link rel="shortcut icon" href="./image/panda.png" type="image/png">
+    <!-- 共通CSS -->
+    <link rel="stylesheet" href="./css/reset_MYEFXXXX.css">
+    <link rel="stylesheet" href="./css/components_MYEFXXXX.css">
+    <!-- 個別CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="nt_header_title"><img src="./image/logo.png" class="nt_header_homeImg">
+            <h1 class="nt_typo_headerTtl c_typo_BLK10 c_typo_align_center">子連れ家族のための飲食店口コミサイト</h1>
+        </div>
+        <nav>
+            <ul class="nt_navItems">
+                <li><a href="#" class="nt_header_navItem"><img src="./image/pen.png">
+                        <p class="c_typo_headerXS c_typo_BLK8">新規投稿</p>
+                    </a></li>
+                <li><a href="#" class="nt_header_navItem"><img src="./image/user.png">
+                        <p class="c_typo_headerXS c_typo_BLK8">ユーザ登録/ログイン</p>
+                    </a></li>
+                <li><a href="#" class="nt_header_navItem"><img src="./image/panda.png">
+                        <p class="c_typo_headerM c_typo_BLK8">パパンダ　さん</p>
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- メイン -->
+    <main>
+        <!-- 検索セクション -->
+        <section class="nt_searchSec">
+            <div class="nt_searchSecInner">
+                <div class="nt_searchArea">
+                    <form>
+                        <div class="nt_search"><input type="text" name="word"
+                                class="nt_search_textField c_typo_bodyL c_typo_BLK10"
+                                placeholder="芝公園&emsp;ハンバーガー"><input type="submit" class="nt_search_btn"
+                                id="nt_searchBtn"><label for="nt_searchBtn">
+                                <p class="c_typo_headerM c_typo_WHT">検索</p>
+                            </label></div>
+                        <div class="nt_btnArea">
+                            <div class="nt_btnWrapper"><a href="#" class="nt_btn"><img
+                                        src="./image/search_area.svg"></a>
+                            </div>
+                            <div class="nt_btnWrapper"><a href="#" class="nt_btn"><img
+                                        src="./image/search_genre.svg"></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="nt_leadArea">
+                    <div class="nt_lead">
+                        <div class="nt_leadInner">
+                            <p class="c_typo_headerXL c_typo_BLK10">今週末<br>キミと何を<br>食べに行こう</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- スライドセクション -->
+        <section class="nt_slideSec">
+            <div class="nt_slideSecInner">
+                <h2 class="c_typo_headerL c_typo_BLK8 c_typo_align_center">新着投稿</h2>
+                <div class="nt_carouselArea">
+                    <div class="pt_dotCarousel" data-widthsp="272" data-widthpc="712">
+                        <div class="pt_dotCarousel_view">
+                            <div class="pt_dotCarousel_Arrow">
+                                <div class="pt_dotCarousel_Arrow_left pt_dotCarousel_Arrow_icon" tabindex="0"><svg
+                                        width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                        <path
+                                            d="M18.705 36.3C18.27 36.3 17.82 36.105 17.535 35.73L9.6 25.74C9.21 25.23 9 24.615 9 23.985C9 23.37 9.225 22.785 9.585 22.32L17.52 12.285C18.03 11.64 18.975 11.52 19.62 12.045C20.265 12.555 20.385 13.5 19.86 14.145L13.245 22.515H37.47C38.295 22.515 38.97 23.19 38.97 24.015C38.97 24.84 38.295 25.515 37.47 25.515H13.245L19.89 33.87C20.4 34.515 20.295 35.46 19.65 35.985C19.38 36.21 19.05 36.315 18.72 36.315L18.705 36.3Z"
+                                            fill="#FFFFFF" />
+                                    </svg></div>
+                                <div class="pt_dotCarousel_Arrow_right pt_dotCarousel_Arrow_icon" tabindex="0"><svg
+                                        width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                        <path
+                                            d="M29.295 36.3C28.965 36.3 28.635 36.195 28.365 35.97C27.72 35.46 27.6 34.515 28.125 33.87L34.74 25.5H10.5C9.675 25.5 9 24.825 9 24C9 23.175 9.675 22.5 10.5 22.5H34.755L28.11 14.145C27.6 13.5 27.705 12.555 28.35 12.03C28.995 11.52 29.94 11.625 30.465 12.27L38.4 22.26C38.79 22.77 39 23.385 39 24.015C39 24.63 38.775 25.215 38.415 25.68L30.48 35.715C30.18 36.09 29.745 36.285 29.295 36.285V36.3Z"
+                                            fill="#FFFFFF" />
+                                    </svg></div>
+                            </div>
+                            <ul>
+                                <li class="pt_dotCarousel_list">
+                                    <div class="pt_dotCarousel_elements">
+                                        <div class="pt_dotCarousel_card pt_dotCarousel_firstCard" tabindex="0"><img
+                                                src="./image/sample.png"></div>
+                                    </div>
+                                </li>
+                                <li class="pt_dotCarousel_list pt_dotCarousel_active">
+                                    <div class="pt_dotCarousel_elements">
+                                        <div class="pt_dotCarousel_card" tabindex="0"><img src="./image/hamburger.png">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="pt_dotCarousel_list">
+                                    <div class="pt_dotCarousel_elements">
+                                        <div class="pt_dotCarousel_card" tabindex="0"><img src="./image/sample.png">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ジャンルセクション -->
+        <section class="nt_genreSec">
+            <div class="nt_genreSecInner">
+                <h2 class="c_typo_headerL c_typo_BLK8 c_typo_align_center">ジャンルで探す</h2>
+                <div class="nt_genreArea">
+                    <ul>
+                        <li><a href="#" class="nt_genreCircle"><img src="./image/japanese.png"></a></li>
+                        <li><a href="#" class="nt_genreCircle"><img src="./image/western.png"></a></li>
+                        <li><a href="#" class="nt_genreCircle"><img src="./image/chinese.png"></a></li>
+                        <li><a href="#" class="nt_genreCircle"><img src="./image/italian.png"></a></li>
+                        <li><a href="#" class="nt_genreCircle"><img src="./image/ethnic.png"></a></li>
+                        <li><a href="#" class="nt_genreCircle"><img src="./image/fastfood.png"></a></li>
+                        <li><a href="#" class="nt_genreCircle"><img src="./image/cafe.png"></a></li>
+                        <li><a href="#" class="nt_genreCircle"><img src="./image/ramen.png"></a></li>
+                        <li><a href="#" class="nt_genreCircle"><img src="./image/yakiniku.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <ul>
+            <li><a href="#">
+                    <p class="c_typo_bodyS c_typo_BLK10 c_typo_align_center">マイページ</p>
+                </a></li>
+            <li><a href="#">
+                    <p class="c_typo_bodyS c_typo_BLK10 c_typo_align_center">利用規約</p>
+                </a></li>
+            <li><a href="#">
+                    <p class="c_typo_bodyS c_typo_BLK10 c_typo_align_center">プライバシーポリシー</p>
+                </a></li>
+            <li><a href="#">
+                    <p class="c_typo_bodyS c_typo_BLK10 c_typo_align_center">お問い合わせ</p>
+                </a></li>
+        </ul>
+    </footer>
+
+    <!-- 共通JavaScript -->
+    <script src="./javascript/event_MYEFXXXX.js"></script>
+    <!-- 個別JavaScript -->
+    <script src="./javascript/script.js"></script>
+</body>
+
+</html>
