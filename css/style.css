@@ -1,0 +1,448 @@
+@font-face {
+    font-family: 'KosugiMaru';
+    src: url('../font/KosugiMaru-Regular.ttf') format('opentype');
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../image/wall.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'KosugiMaru';
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 32px;
+}
+
+.nt_header_title {
+    position: relative;
+}
+
+.nt_header_title>h1 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.nt_typo_headerTtl {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3d1701;
+}
+
+nav {
+    padding-left: 40px;
+}
+
+.nt_navItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nt_navItems>li:not(:first-child) {
+    padding-left: 40px;
+}
+
+.nt_navItems>li:nth-child(1)>.nt_header_navItem,
+.nt_navItems>li:nth-child(2)>.nt_header_navItem {
+    position: relative;
+}
+
+.nt_navItems>li:nth-child(1)>.nt_header_navItem>p,
+.nt_navItems>li:nth-child(2)>.nt_header_navItem>p {
+    position: absolute;
+    top: 0;
+    transform: translateY(-80%);
+}
+
+.nt_navItems>li:nth-child(1)>.nt_header_navItem>p {
+    left: 56px;
+}
+
+.nt_navItems>li:nth-child(2)>.nt_header_navItem>p {
+    left: 40px;
+}
+
+.nt_navItems>li:nth-child(3)>.nt_header_navItem {
+    display: flex;
+    align-items: center;
+}
+
+.nt_navItems>li:nth-child(3)>.nt_header_navItem>img {
+    flex-shrink: 0;
+}
+
+.nt_navItems>li:nth-child(3)>.nt_header_navItem>p {
+    flex-grow: 1;
+    margin-left: 16px;
+}
+
+/* メイン */
+main {
+    flex-grow: 1;
+}
+
+/* 検索セクション */
+.nt_searchSec {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 64px 32px 320px;
+}
+
+.nt_searchSecInner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nt_searchArea {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 600px;
+    padding-top: 168px;
+}
+
+.nt_search {
+    position: relative;
+    display: flex;
+    border-radius: 16px;
+}
+
+.nt_search::after {
+    position: absolute;
+    top: 8px;
+    left: 6px;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background-image: url('../image/border.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 592px;
+    content: '';
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.nt_search_textField {
+    width: 400px;
+    padding: 16px;
+    border-radius: 16px 0 0 16px;
+    background-color: #FFFFFF;
+    outline: none;
+}
+
+.nt_search_textField::placeholder {
+    color: #DDDDDD;
+}
+
+.nt_search_btn {
+    display: none;
+}
+
+.nt_search_btn+label {
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    border-radius: 0 16px 16px 0;
+    background-color: #FBB4C3;
+    transition: all ease 0.2s;
+}
+
+.nt_search_btn+label:hover {
+    background-color: #f45f7f;
+    transition: all ease 0.2s;
+}
+
+.nt_btnArea {
+    display: flex;
+    padding-top: 48px;
+}
+
+.nt_btnArea>.nt_btnWrapper:not(:first-child) {
+    padding-left: 36px;
+}
+
+.nt_btn {
+    position: relative;
+    display: block;
+    width: 220px;
+    transition: all ease 0.2s;
+}
+
+.nt_btn::after {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 100%;
+    height: 100%;
+    border-radius: 28px;
+    background-image: url('../image/border.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 592px;
+    content: '';
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.nt_btn:hover {
+    transform: scale(1.05);
+    transition: all ease 0.3s;
+}
+
+.nt_btn>img {
+    width: 100%;
+}
+
+.nt_leadArea {
+    padding-right: 48px;
+}
+
+.nt_lead {
+    border-radius: 100% 70% 96% 64%;
+    border: 8px dotted #b1d4e3;
+}
+
+.nt_leadInner {
+    padding: 84px 56px 32px 64px;
+    border-radius: 80% 56% 80% 48%;
+    background-color: rgba(255, 255, 255, 0.8);
+    writing-mode: vertical-rl;
+}
+
+.nt_leadInner>p {
+    line-height: 80px;
+}
+
+/* スライドセクション */
+.nt_slideSec {
+    padding: 64px 0;
+    background-color: rgba(141, 176, 59, 0.2);
+}
+
+.nt_slideSecInner {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.nt_carouselArea {
+    padding-top: 24px;
+}
+
+/* コンポーネント：DotCarousel */
+/* -----表示エリア----- */
+.pt_dotCarousel {
+    overflow: hidden;
+}
+
+.pt_dotCarousel_view {
+    position: relative;
+    margin: 0 auto;
+    width: 272px;
+}
+
+.pt_dotCarousel_view ul {
+    display: flex;
+}
+
+@media (min-width: 760px) {
+    .pt_dotCarousel_view {
+        width: 712px;
+    }
+}
+
+/* -----カルーセルのリスト定義----- */
+.pt_dotCarousel_list {
+    padding: 8px;
+    transition: 200ms cubic-bezier(0, 0.2, 0.4, 1);
+    display: block;
+    text-align: center;
+}
+
+.pt_dotCarousel_none {
+    transition: none;
+    opacity: 0;
+}
+
+.pt_dotCarousel_elements {
+    border: 3px solid #585858;
+}
+
+/* アクティブリスト */
+.pt_dotCarousel_list.pt_dotCarousel_active .pt_dotCarousel_card {
+    transform: scale(1);
+}
+
+/* 非アクティブリストを縮小 */
+.pt_dotCarousel_list .pt_dotCarousel_card_right {
+    transform: scale(0.8) translate(-32px, 0px);
+}
+
+.pt_dotCarousel_list .pt_dotCarousel_card_left {
+    transform: scale(0.8) translate(32px, 0px);
+}
+
+@media (min-width: 760px) {
+    .pt_dotCarousel_list {
+        padding: 16px 64px;
+    }
+
+    .pt_dotCarousel_list .pt_dotCarousel_card {
+        transform: scale(1);
+    }
+}
+
+/* -----カード定義----- */
+.pt_dotCarousel_card {
+    width: 256px;
+    background: #FFFFFF;
+    color: #2E2E2E;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    transition: 200ms cubic-bezier(0, 0.2, 0.4, 1);
+}
+
+@media (min-width: 760px) {
+    .pt_dotCarousel_view {
+        overflow: visible;
+    }
+
+    .pt_dotCarousel_card {
+        width: 584px;
+    }
+}
+
+.pt_dotCarousel_card>img {
+    width: 100%;
+}
+
+/* -----ArrpwIcon定義----- */
+.pt_dotCarousel_Arrow {
+    display: none;
+}
+
+.pt_dotCarousel_Arrow_icon:hover>svg {
+    transform: scale(1.2);
+    transition: all ease 0.3s;
+}
+
+@media (min-width: 760px) {
+    .pt_dotCarousel_Arrow {
+        display: block;
+    }
+
+    .pt_dotCarousel_Arrow_icon {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+
+    .pt_dotCarousel_Arrow_right {
+        left: 680px;
+    }
+
+    .pt_dotCarousel_Arrow_left {
+        left: -30px;
+    }
+
+    .pt_dotCarousel_Arrow_icon>svg {
+        transition: all ease 0.2s;
+    }
+
+    .pt_dotCarousel_Arrow_icon>svg>path {
+        filter: drop-shadow(4px 4px 4px rgb(0, 0, 0));
+    }
+
+    .pt_dotCarousel_disable {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.pt_section {
+    padding: 10px;
+}
+
+.pt_dotCarousel_container {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+/* ジャンルセクション */
+.nt_genreSec {
+    padding: 64px 0 200px;
+}
+
+.nt_genreSecInner {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.nt_genreArea {
+    padding-top: 24px;
+}
+
+.nt_genreArea>ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 48px;
+}
+
+.nt_genreArea>ul>li {
+    display: flex;
+    justify-content: center;
+    flex-basis: calc((100% - 48px * 2) / 3);
+    margin-top: 48px;
+}
+
+.nt_genreCircle {
+    display: block;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all ease 0.2s;
+}
+
+.nt_genreCircle:hover {
+    transform: scale(1.05);
+    transition: all ease 0.3s;
+}
+
+.nt_genreCircle>img {
+    height: 100%;
+}
+
+/* フッター */
+footer {
+    padding: 32px 80px;
+}
+
+footer>ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer>ul>li {
+    flex-basis: 200px;
+}
+
+footer>ul>li:not(:first-child) {
+    border-left: 1px solid #2E2E2E;
+}
